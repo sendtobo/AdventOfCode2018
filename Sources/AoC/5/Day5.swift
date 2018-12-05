@@ -28,19 +28,19 @@ private class Challenge1: Challenge {
     func run(input: String) {
         var input = input
         input.removeLast() //pesky new line coming through
-        print(self.fullySmash(input))
+        let startUnits = input.map({ Unit(string: "\($0)") })
+        print(self.fullySmash(startUnits).count)
     }
     
-    func fullySmash(_ input: String) -> Int {
-        var startUnits = input.map({ Unit(string: "\($0)") })
+    func fullySmash(_ startUnits: [Unit]) -> [Unit] {
+        var startUnits = startUnits
         var endUnits = self.smash(startUnits)
-        
         while startUnits.count != endUnits.count {
             startUnits = endUnits
             endUnits = self.smash(startUnits)
         }
         
-        return endUnits.count
+        return endUnits
     }
     
     func smash(_ units: [Unit]) -> [Unit] {
@@ -71,12 +71,14 @@ private class Challenge2: Challenge1 {
     override func run(input: String) {
         var input = input
         input.removeLast()
+        let startUnits = input.map({ Unit(string: "\($0)") })
+        //pre smash the input to optimize since we are always going to be doing that work
+        let preSmashedUnits = self.fullySmash(startUnits)
         var smallestCount: Int?
         for char in "abcdefghijklmnopqrstuvwxyz" {
             print("\(char)")
-            var tempInput = input.replacingOccurrences(of: "\(char)", with: "")
-            tempInput = tempInput.replacingOccurrences(of: "\(char)".uppercased(), with: "")
-            let smashedCount = self.fullySmash(tempInput)
+            let tempUnits = preSmashedUnits.filter({ $0.value != "\(char)" })
+            let smashedCount = self.fullySmash(tempUnits).count
             if smallestCount == nil || smashedCount < smallestCount! {
                 smallestCount = smashedCount
             }
