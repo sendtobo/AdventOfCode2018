@@ -4,7 +4,7 @@ To build the project you can either run `swift build` or go into the Xcode proje
 
 To run each day's solution either go into `sources/AoC/Config.plist`,change the day and challenge number, and run from Xcode. Or run `swift run AoC DAY CHALLENGE` where DAY is the number of the day and CHALLENGE is either 1 or 2.
 
-Links to Solutions
+Links to Solutions:
 * [Day 1](https://github.com/sendtobo/AdventOfCode2018/blob/master/Sources/AoC/1/Day1.swift)
 * [Day 2](https://github.com/sendtobo/AdventOfCode2018/blob/master/Sources/AoC/2/Day2.swift)
 * [Day 3](https://github.com/sendtobo/AdventOfCode2018/blob/master/Sources/AoC/3/Day3.swift)
