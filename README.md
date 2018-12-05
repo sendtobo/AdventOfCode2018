@@ -2,7 +2,7 @@
 
 To build the project you can either run `swift build` or go into the Xcode project and build it.
 
-To run each day's solution either go into `sources/AoC/Config.plist`,change the day and challenge number, and run from Xcode. Or run `swift run AoC DAY CHALLENGE` where DAY is the number of the day and CHALLENGE is either 1 or 2.
+To run each day's solution either go into `sources/AoC/Config.plist`, change the day and challenge number, and run from Xcode. Or run `swift run AoC DAY CHALLENGE` where DAY is the number of the day and CHALLENGE is either 1 or 2.
 
 The ounly real dependancies are on [Files](https://github.com/johnsundell/files) to parse my inputs and sometimes on Foundation
 
