@@ -1,4 +1,3 @@
-import Files
 
 class Day2: Day {
     var challenges: [Challenge] = [Challenge1(), Challenge2()]

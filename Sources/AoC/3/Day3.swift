@@ -1,5 +1,3 @@
-import Files
-
 class Day3: Day {
     var challenges: [Challenge] = [Challenge1(), Challenge2()]
     required init() { }

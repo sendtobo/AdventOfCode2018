@@ -1,5 +1,5 @@
-import Files
 import Foundation
+
 class Day4: Day {
     var challenges: [Challenge] = [Challenge1(), Challenge2()]
     required init() { }
