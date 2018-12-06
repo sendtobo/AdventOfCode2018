@@ -12,3 +12,4 @@ Links to Solutions:
 * [Day 3](https://github.com/sendtobo/AdventOfCode2018/blob/master/Sources/AoC/3/Day3.swift)
 * [Day 4](https://github.com/sendtobo/AdventOfCode2018/blob/master/Sources/AoC/4/Day4.swift)
 * [Day 5](https://github.com/sendtobo/AdventOfCode2018/blob/master/Sources/AoC/5/Day5.swift)
+* [Day 6](https://github.com/sendtobo/AdventOfCode2018/blob/master/Sources/AoC/6/Day6.swift)
